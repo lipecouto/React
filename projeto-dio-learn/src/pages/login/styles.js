@@ -45,7 +45,6 @@ export const SubTitleLogin = styled.p`
     font-size: 18px;
     margin-bottom: 35px;
     line-height: 25px;
-
 `
 
 export const EsqueciText = styled.p`
@@ -55,7 +54,6 @@ export const EsqueciText = styled.p`
     font-size: 18px;
     line-height: 19px;
     color: #e5e044;
-
 `
 
 export const CriarText = styled.p`

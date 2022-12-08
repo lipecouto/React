@@ -1,7 +1,3 @@
-import { Link } from 'react-router-dom'
-
-import imagemfundo from '../../public/logo512.png'
-import { Button } from '../../components/button'
 import { Header } from '../../components/header'
 
 import { Container, Column, Title, TitleHighlight } from  './styles'
@@ -9,7 +5,7 @@ import { UserInfo } from '../../components/userinfo'
 import { Card } from '../../components/card'
 
 
-const Home = () =>{
+const Feed = () =>{
     return (<>
             <Header autenticado={true}/>
             <Container>
@@ -32,4 +28,4 @@ const Home = () =>{
     )
 }
 
-export default Home
+export { Feed }
