@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "../button";
-
+import { useNavigate } from "react-router-dom";
 import {
     BuscarInputContainer,
     Column,
@@ -15,6 +15,16 @@ import {
 
 } from "./style"
 const Header = ({autenticado}) =>{
+    const navigate = useNavigate()
+
+    const handleClickSingIn = () =>{
+        navigate('/login')
+    }
+
+    const handleClickLogIn = () =>{
+        navigate('/login')
+    }
+
     return(
         <>
             <Wrapper>
@@ -37,8 +47,8 @@ const Header = ({autenticado}) =>{
                     ) : (
                         <>
                         <MenuRight href="">Home</MenuRight>
-                        <Button tittle='Entrar'></Button>
-                        <Button tittle='Cadastrar'></Button>
+                        <Button tittle='Entrar' onClick={handleClickSingIn}></Button>
+                        <Button tittle='Cadastrar' onClick={handleClickLogIn}></Button>
                         </>
                         )}
                     </Row>

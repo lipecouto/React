@@ -51,7 +51,7 @@ export const EsqueciText = styled.p`
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 18px;
     line-height: 19px;
     color: #e5e044;
 `

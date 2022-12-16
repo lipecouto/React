@@ -1,5 +1,5 @@
 import React from 'react'
-import { FiThumbsUp } from 'react-icons/fi'
+import { FaThumbsUp } from 'react-icons/fa'
 
 import {
     CardContainer,
@@ -30,7 +30,7 @@ const Card = () => {
         <HasInfo>
             <h4>#HTML #CSS #JAVASCRIPT</h4>
             <p>
-                <FiThumbsUp /> 10
+                <FaThumbsUp /> 10
             </p>
         </HasInfo>
       </Content>
