@@ -23,6 +23,9 @@ const Login = () =>{
       
     const navigate = useNavigate();
     
+    const handlelogin = () => {
+        navigate('/cadastro');
+    }
     const { control, handleSubmit, formState: { errors, isValid } } = useForm({
             resolver: yupResolver(schema),
             mode: 'onChange',
@@ -64,7 +67,7 @@ const Login = () =>{
                                 <Button tittle="Login" variant="secundary" type="submit"/>
                             </form>
                             <Row>
-                                <CriarText>Crie sua conta aqui</CriarText>
+                                <a href='#' rel='' onClick={handlelogin}><CriarText>Crie sua conta aqui</CriarText></a>
                                 <EsqueciText>Esqueci minha senha</EsqueciText>
                             </Row>
                         </Wrapper>
